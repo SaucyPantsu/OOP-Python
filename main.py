@@ -11,4 +11,3 @@ else:
 
 student_name = input('What is your name? >')
 print("Hello there, ", student_name)
-ihgh
