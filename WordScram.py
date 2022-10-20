@@ -3,7 +3,7 @@
 # Ryan McLoughlin C21431604
 
 # breaking a string into a list
-def convert(string):
+def convert_to_list(string):
     list_split = []
     list_split[:0] = string
     return list_split
@@ -26,7 +26,7 @@ for index in split_string:
             for other_index in scrambled:
                 length = len(other_index)  # find the length of the array
                 divider = length//2  # ensure the middle element to move is a while number
-                word = convert(other_index)  # make the single element into an array again
+                word = convert_to_list(other_index)  # make the single element into an array again
                 # scramble some elements
                 word[1], word[divider], word[length-3] = word[length-3], word[divider], word[1]
                 scrambled = "".join(word)  # recombine the array into an element
@@ -39,7 +39,7 @@ for index in split_string:
             for other_index in scrambled:
                 length = len(other_index)  # find the length of the array
                 divider = length // 2  # ensure the middle element to move is a while number
-                word = convert(other_index)  # make the single element into an array again
+                word = convert_to_list(other_index)  # make the single element into an array again
                 word[1], word[divider], word[length - 2] = word[length - 2], word[divider], word[
                     1]  # scramble some elements
                 scrambled = "".join(word)  # recombine the array into an element
