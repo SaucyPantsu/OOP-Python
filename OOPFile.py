@@ -59,7 +59,3 @@ print("Student Data:")
 
 student_data_dump(William)
 student_data_dump(Paul)
-
-
-
-
